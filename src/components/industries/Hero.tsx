@@ -1,0 +1,75 @@
+"use client";
+import React, { useState, useRef } from "react";
+import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
+import MaxWidthWrapper from "../MaxWidthWrapper";
+
+const Hero = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  const togglePlay = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      } 
+      setIsPlaying(!isPlaying); 
+    }
+  };
+
+  return (
+    <div className="bg-b py-[40px]">
+      <MaxWidthWrapper>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 100,
+          }}
+          viewport={{ once: true }}
+          className="bg-[#7C8AC6] aspect-video relative overflow-hidden cursor-pointer"
+          onClick={togglePlay}
+        >
+          <video
+            ref={videoRef}
+            className="absolute top-0 left-0 w-full aspect-video"
+            loop
+          >
+            <source src="/jolly-final.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          {!isPlaying && (
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <button className="focus:outline-none">
+                <svg
+                  width="90"
+                  height="90"
+                  viewBox="0 0 110 110"
+                  fill="none"
+                  className="h-10 w-10 md:h-24 md:w-24 transition-transform duration-300 hover:scale-110"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M47.1962 9.90104C51.2053 4.95661 58.7491 4.95661 62.7581 9.90104L63.7199 11.0872C64.0505 11.495 64.6212 11.6163 65.0891 11.3782L66.4501 10.6858C72.1237 7.79947 79.0152 10.8678 80.6666 17.0154L81.0628 18.4902C81.199 18.9972 81.671 19.3401 82.1953 19.3129L83.7203 19.234C90.0773 18.9048 95.125 24.5109 94.1332 30.7987L93.8953 32.3071C93.8135 32.8257 94.1052 33.3309 94.5952 33.5194L96.0204 34.0675C101.962 36.3525 104.293 43.527 100.829 48.8678L99.9985 50.149C99.7128 50.5895 99.7738 51.1697 100.145 51.5411L101.224 52.6216C105.722 57.1255 104.934 64.628 99.5972 68.0982L98.317 68.9307C97.8769 69.2169 97.6966 69.7718 97.8845 70.262L98.4308 71.688C100.708 77.6321 96.9364 84.1653 90.6499 85.165L89.1418 85.4048C88.6233 85.4873 88.2329 85.9208 88.2051 86.4451L88.1243 87.97C87.7871 94.3266 81.6841 98.7607 75.5344 97.117L74.0592 96.7227C73.552 96.5872 73.019 96.8245 72.7804 97.2921L72.0862 98.6523C69.1928 104.322 61.8139 105.891 56.8644 101.888L55.6771 100.928C55.2689 100.597 54.6855 100.597 54.2773 100.928L53.0899 101.888C48.1405 105.891 40.7615 104.322 37.8681 98.6523L37.174 97.2921C36.9353 96.8245 36.4024 96.5872 35.8952 96.7227L34.4199 97.117C28.2703 98.7607 22.1672 94.3266 21.8301 87.97L21.7492 86.4451C21.7214 85.9208 21.331 85.4873 20.8125 85.4048L19.3045 85.165C13.0179 84.1653 9.24602 77.6322 11.5235 71.688L12.0698 70.262C12.2577 69.7718 12.0774 69.2169 11.6373 68.9307L10.3571 68.0982C5.02071 64.628 4.23217 57.1255 8.73046 52.6216L9.80955 51.5411C10.1806 51.1697 10.2415 50.5895 9.95587 50.149L9.125 48.8678C5.66143 43.527 7.99258 36.3525 13.9339 34.0675L15.3592 33.5194C15.8492 33.3309 16.1409 32.8257 16.0591 32.3071L15.8211 30.7987C14.8293 24.5109 19.8771 18.9048 26.2341 19.234L27.7591 19.3129C28.2834 19.3401 28.7553 18.9972 28.8915 18.4902L29.2877 17.0154C30.9391 10.8678 37.8307 7.79947 43.5042 10.6858L44.8652 11.3782C45.3332 11.6163 45.9038 11.495 46.2345 11.0872L47.1962 9.90104Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M71.906 57.3039C73.6943 56.2714 73.6943 53.6903 71.906 52.6578L46.952 38.2506C45.1637 37.2181 42.9284 38.5087 42.9284 40.5737V69.388C42.9284 71.453 45.1637 72.7436 46.952 71.7111L71.906 57.3039Z"
+                    fill="#010F48"
+                  />
+                </svg>
+              </button>
+            </div>
+          )}
+        </motion.div>
+      </MaxWidthWrapper>
+    </div>
+  );
+};
+
+export default Hero;
