@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jollypolymerce.vercel.app
+
+# Sitemaps
+Sitemap: https://jollypolymerce.vercel.app/sitemap.xml
