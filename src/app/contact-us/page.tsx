@@ -46,6 +46,7 @@ export default function page() {
                 width="410"
                 height="230"
                 loading="lazy"
+                title="Google Map showing our location"
               ></iframe>
             </div>
           </div>

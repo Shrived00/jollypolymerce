@@ -36,12 +36,12 @@ export default function NavBar() {
             <Link href={"/"} className="">
               {/* <Image src={"/logo.png"} height={100} width={160} alt="" /> */}
               <div className="hidden md:block">
-               
-                <Image src="/logo-w.png" alt="" height={100} width={130}/>
+
+                <Image src="/logo-w.png" alt="" height={100} width={130} />
               </div>
               <div className=" md:hidden py-4">
-                
-                <Image src="/logo-w.png" alt="" height={55} width={100}/>
+
+                <Image src="/logo-w.png" alt="" height={55} width={100} />
 
               </div>
             </Link>
@@ -94,10 +94,12 @@ export default function NavBar() {
             <div className="flex justify-center items-center md:hidden">
               <Sheet>
                 <SheetTrigger>
-                  <ChartNoAxesColumnIncreasing
-                    size={24}
-                    className="rotate-[270deg]"
-                  />
+                  <button>
+                    <ChartNoAxesColumnIncreasing
+                      size={24}
+                      className="rotate-[270deg]"
+                    />
+                  </button>
                 </SheetTrigger>
                 <SheetContent side={"left"} className="w-[85%]">
                   <MobileNavContent />

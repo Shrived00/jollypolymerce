@@ -22,7 +22,7 @@ export default function Info() {
           <div className="  flex flex-col gap-2 md:gap-6 justify-center">
             <div className="flex flex-col md:gap-5">
               <div className="text-3xl md:text-[60px] font-semibold text-[#5467b6]">
-               
+
                 <NumberTicker value={120} className="text-3xl md:text-[60px] font-semibold text-[#5467b6]" /><span className="text-[#010f48]">K+</span>
               </div>
               <h1 className="text-sm  md:text-[24px] font-medium text-[#363636]">
@@ -43,6 +43,7 @@ export default function Info() {
           <div className="  flex justify-end items-center ">
             <Image
               src={"/hero.png"}
+              priority
               alt=""
               height={1080}
               width={1920}

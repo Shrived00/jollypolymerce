@@ -79,6 +79,7 @@ export default function Footer() {
                 width="340"
                 height="230"
                 loading="lazy"
+                title="Google Map showing our location"
               ></iframe>
             </div>
           </div>
@@ -89,6 +90,7 @@ export default function Footer() {
             <a
               href="https://www.facebook.com/share/1CyUS7c5aG/?mibextid=wwXIfr"
               target="_blank"
+              aria-label="Share on Facebook"
               className="bg-b hover:bg-[#4967E2] transition-all duration-300 h-10 w-10   md:h-10 md:w-10 rounded-full flex items-center justify-center"
             >
               <Facebook color="white" fill="white" />
@@ -96,6 +98,7 @@ export default function Footer() {
             <a
               href="https://www.instagram.com/jolly_pipes?igsh=MTRpcjYxaWFjdXZsMw%3D%3D&utm_source=qr"
               target="_blank"
+              aria-label="Share on Instagram"
               className="bg-b  hover:bg-[#4967E2] transition-all duration-300 h-10 w-10   md:h-10 md:w-10 rounded-full flex items-center justify-center"
             >
               <Instagram
@@ -107,6 +110,7 @@ export default function Footer() {
             <a
               href="mailto:info@jollypipes.in"
               target="_blank"
+              aria-label="Share on Mail"
               className="bg-b  hover:bg-[#4967E2] transition-all duration-300 h-10 w-10   md:h-10 md:w-10 rounded-full flex items-center justify-center"
             >
               <Mail
