@@ -93,14 +93,10 @@ export default function NavBar() {
             </div>
             <div className="flex justify-center items-center md:hidden">
               <Sheet>
-                <SheetTrigger>
-                  <button>
-                    <ChartNoAxesColumnIncreasing
-                      size={24}
-                      className="rotate-[270deg]"
-                    />
-                  </button>
+                <SheetTrigger aria-label="Collapse menu" title="Collapse menu">
+                  <ChartNoAxesColumnIncreasing size={24} className="rotate-[270deg]" />
                 </SheetTrigger>
+
                 <SheetContent side={"left"} className="w-[85%]">
                   <MobileNavContent />
                 </SheetContent>

@@ -25,14 +25,14 @@ export default function Aboutus() {
 
 
   const data = [
-    {name:"Shreeji Polymers, Bhuj"},
-    {name:"Mahesvari Polymers, Mehsana"},
-    {name:"M.D. Sales, Jaipur"},
-    {name:"Angel Tiles, Udaipur"},
-    {name:"N.K. Polymers, Ahmedabad"},
-    {name:"Sanghvi Bafna, Pune"},
-    {name:"D.K. Enterprise, Ahmedabad"},
-    {name:"Govinda Enterprise, Vadodara"},
+    { name: "Shreeji Polymers, Bhuj" },
+    { name: "Mahesvari Polymers, Mehsana" },
+    { name: "M.D. Sales, Jaipur" },
+    { name: "Angel Tiles, Udaipur" },
+    { name: "N.K. Polymers, Ahmedabad" },
+    { name: "Sanghvi Bafna, Pune" },
+    { name: "D.K. Enterprise, Ahmedabad" },
+    { name: "Govinda Enterprise, Vadodara" },
   ]
   return (
     <div className="py-[100px] flex flex-col gap-14 bg-white">
@@ -57,7 +57,7 @@ export default function Aboutus() {
                     loading="lazy"
                     src={items.logo}
                     className="max-w-none h-7 md:h-10"
-                    alt="Image 1" 
+                    alt="Image 1"
                   />
                 ))}
               </div>
@@ -202,35 +202,38 @@ export default function Aboutus() {
               exceptional customer service and satisfaction.
             </h1>
             <div className="flex gap-6">
-            <a
-              href="https://www.facebook.com/share/1CyUS7c5aG/?mibextid=wwXIfr"
-              target="_blank"
-              className="bg-b hover:bg-[#4967E2] transition-all duration-300 h-10 w-10   md:h-10 md:w-10 rounded-full flex items-center justify-center"
-            >
-              <Facebook color="white" fill="white" />
-            </a>
-            <a
-              href="https://www.instagram.com/jolly_pipes?igsh=MTRpcjYxaWFjdXZsMw%3D%3D&utm_source=qr"
-              target="_blank"
-              className="bg-b  hover:bg-[#4967E2] transition-all duration-300 h-10 w-10   md:h-10 md:w-10 rounded-full flex items-center justify-center"
-            >
-              <Instagram
-                color="white"
-                className="hover:bg-[#4967E2] transition-all duration-300"
-              />
-            </a>
+              <a
+                href="https://www.facebook.com/share/1CyUS7c5aG/?mibextid=wwXIfr"
+                aria-label="Share on Facebook"
+                target="_blank"
+                className="bg-b hover:bg-[#4967E2] transition-all duration-300 h-10 w-10   md:h-10 md:w-10 rounded-full flex items-center justify-center"
+              >
+                <Facebook color="white" fill="white" />
+              </a>
+              <a
+                href="https://www.instagram.com/jolly_pipes?igsh=MTRpcjYxaWFjdXZsMw%3D%3D&utm_source=qr"
+                target="_blank"
+                aria-label="Share on Instagram"
+                className="bg-b  hover:bg-[#4967E2] transition-all duration-300 h-10 w-10   md:h-10 md:w-10 rounded-full flex items-center justify-center"
+              >
+                <Instagram
+                  color="white"
+                  className="hover:bg-[#4967E2] transition-all duration-300"
+                />
+              </a>
 
-            <a
-              href="mailto:info@jollypipes.in"
-              target="_blank"
-              className="bg-b  hover:bg-[#4967E2] transition-all duration-300 h-10 w-10   md:h-10 md:w-10 rounded-full flex items-center justify-center"
-            >
-              <Mail
-                color="white"
-                className="hover:bg-[#4967E2] transition-all duration-300"
-              />
-            </a>
-          </div>
+              <a
+                href="mailto:info@jollypipes.in"
+                target="_blank"
+                aria-label="Share on Email"
+                className="bg-b  hover:bg-[#4967E2] transition-all duration-300 h-10 w-10   md:h-10 md:w-10 rounded-full flex items-center justify-center"
+              >
+                <Mail
+                  color="white"
+                  className="hover:bg-[#4967E2] transition-all duration-300"
+                />
+              </a>
+            </div>
           </motion.div>
         </MaxWidthWrapper>
       </div>

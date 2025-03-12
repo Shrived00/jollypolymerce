@@ -1,11 +1,4 @@
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+
 import { Box } from "lucide-react";
 import Image from "next/image";
 import MaxWidthWrapper from "../MaxWidthWrapper";
@@ -21,6 +14,7 @@ function Hero() {
             <a
               href="/Brochure.pdf"
               target="_blank"
+              aria-label="Brochure"
               className="group border-[2px] font-medium shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]   hover:border-[#4967E2] border-white hover:bg-white hover:text-[#4967E2]  bg-[#4967E2] py-5 flex flex-row gap-3 px-10 rounded-full justify-center items-center text-2xl transition-all duration-500"
             >
               <svg
@@ -165,6 +159,7 @@ function Hero() {
               <a
                 target="_blank"
                 href="/Brochure.pdf"
+                aria-label="Brochure"
                 className="border-[2px] shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] border-white bg-[#4967E2] py-2 flex flex-row gap-3 px-2 rounded-full justify-center w-full items-center text-xs "
               >
                 <Box size={15} />

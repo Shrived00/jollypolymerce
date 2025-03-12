@@ -53,6 +53,7 @@ export default function page() {
           <div className="flex items-center justify-center md:justify-start gap-3 md:gap-6">
             <a
               href="https://www.facebook.com/share/1CyUS7c5aG/?mibextid=wwXIfr"
+              aria-label="Share on Facebook"
               target="_blank"
               className="bg-white h-10 w-10   md:h-10 md:w-10 rounded-full flex items-center justify-center"
             >
@@ -61,6 +62,7 @@ export default function page() {
             <a
               href="https://www.instagram.com/jolly_pipes?igsh=MTRpcjYxaWFjdXZsMw%3D%3D&utm_source=qr"
               target="_blank"
+              aria-label="Share on Instagram"
               className="bg-white h-10 w-10   md:h-10 md:w-10 rounded-full flex items-center justify-center"
             >
               <Instagram color="white" fill="#010F48" />
@@ -69,6 +71,7 @@ export default function page() {
             <a
               href="mailto:info@jollypipes.in"
               target="_blank"
+              aria-label="Share on Mail"
               className="bg-white h-10 w-10   md:h-10 md:w-10 rounded-full flex items-center justify-center"
             >
               <Mail color="white" fill="#010F48" />

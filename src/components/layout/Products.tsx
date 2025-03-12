@@ -60,6 +60,7 @@ export default function Products() {
               <a
                 href="/Brochure.pdf"
                 target="_blank"
+                aria-label="Brochure"
                 key={items.id}
                 className={cn(
                   "grid grid-col-1 rounded-[20px] text-black hover:scale-105 transition-all place-content-start duration-500",
