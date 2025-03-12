@@ -14,20 +14,18 @@ export const metadata: Metadata = generateMetadata({
     type: "website", // or any other valid OpenGraph type
     // ... other OpenGraph properties
   },
-  canonical:
-    "Jolly Pipes Limited: Specializing in CPVC, UPVC, SWR, and agricultural piping systems for reliable performance and durability.",
-  // ... other metadata properties
+  canonical: "https://www.jollypipes.com/",
 });
 export default function Home() {
   const images = [
-    '/about-us/2.png',    
-    '/about-us/a-2.png',    
-    '/about-us/a-3.png',    
+    '/about-us/2.png',
+    '/about-us/a-2.png',
+    '/about-us/a-3.png',
     // Add more image URLs as needed
   ];
   return (
-    <> 
-    <NavBar />
+    <>
+      <NavBar />
       <InfiniteCarousel images={images} interval={3000} />
       <ReviewsCourausel />
       <AboutUsimages />

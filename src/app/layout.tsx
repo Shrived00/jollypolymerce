@@ -11,9 +11,7 @@ export const metadata: Metadata = generateMetadata({
     type: "website", // or any other valid OpenGraph type
     // ... other OpenGraph properties
   },
-  canonical:
-    "Jolly Pipes Limited: Specializing in CPVC, UPVC, SWR, and agricultural piping systems for reliable performance and durability.",
-  // ... other metadata properties
+  canonical: "https://www.jollypipes.com/",
 });
 
 const poppins = Poppins({
