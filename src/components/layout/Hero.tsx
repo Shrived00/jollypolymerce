@@ -109,7 +109,7 @@ function Hero() {
           <div className="flex flex-col justify-center items-end max-w-sm">
             <Image
               src="/mhero-1.png"
-              priority={true}
+              priority
               alt=""
               width={600}
               height={500}
